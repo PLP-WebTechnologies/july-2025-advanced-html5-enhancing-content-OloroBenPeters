@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benedict's Web Page</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>This page is a simple demo of lists, tables, media, and an HTML5 form.</p>
+  </header>
+
+  <!-- Section: Lists -->
+  <section>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Drawing</li>
+      <li>Learning to code</li>
+      <li>3D Animation</li>
+      <li>Watching football</li>
+    </ul>
+
+    <h3>Things I Want to Learn in Tech</h3>
+    <ol>
+      <li>Mastering JavaScript and React</li>
+      <li>Building full-stack applications</li>
+      <li>Exploring game development</li>
+      <li>Virtual and Augmented Reality</li>
+    </ol>
+  </section>
+
+  <!-- Section: Table -->
+  <section>
+    <h2>Weekly Study Schedule</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <caption>How I Plan My Learning</caption>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Focus Area</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>JavaScript</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>React</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>HTML & CSS</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>3D Animation</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Project Work</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Media -->
+  <section>
+    <h2>Media Section</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Sample web design" width="400">
+      <figcaption>A placeholder image representing creativity in design.</figcaption>
+    </figure>
+
+    <h3>Sample Audio</h3>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Sample Video</h3>
+    <video width="400" controls>
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Section: Form -->
+  <section>
+    <h2>Contact / Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="08012345678" pattern="[0-9]{11}" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="15"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select--</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="canada">Canada</option>
+          <option value="germany">Germany</option>
+        </select><br><br>
+
+        <p>Subscribe to newsletter?</p>
+        <input type="radio" id="yes" name="newsletter" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="newsletter" value="no">
+        <label for="no">No</label><br><br>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions
+        </label><br><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Benedict's Web Page</p>
+  </footer>
+</body>
+</html>
